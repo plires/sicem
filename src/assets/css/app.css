@@ -1,0 +1,143 @@
+/* Variables */
+:root {
+  --primary-color: rgba(5, 45, 106, 1);
+  --secondary-color: rgba(0, 119, 182, 1);
+  --third-text: rgba(140, 140, 140, 1);
+}
+/* Variables end */
+
+.transition {
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+
+body {
+  font-family: 'Montserrat' !important;
+  background: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+p span {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0 !important;
+  list-style: none;
+}
+
+.bebas {
+  font-family: 'Bebas Neue';
+}
+
+.title {
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.page {
+  padding-top: 25px;
+}
+
+header.fixed + .page {
+  padding-top: 205px;
+}
+
+/* Home */
+.page .home {
+  margin-top: -45px;
+}
+
+header.fixed .page .home {
+  padding-top: -20px;
+}
+
+/* Carrusel accesorios */
+.carruselAccesorios .slick-arrow {
+  position: absolute;
+  height: auto !important;
+  top: 50% !important;
+  padding-bottom: 0;
+  background: transparent !important;
+  width: inherit !important;
+}
+
+.carruselAccesorios .slick-prev {
+  left: 20px !important;
+}
+
+.carruselAccesorios .slick-next {
+  right: 20px !important;
+}
+
+.carruselAccesorios .slick-next::before,
+.carruselAccesorios .slick-prev::before {
+  color: var(--secondary-color);
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+
+.carruselAccesorios .slick-next:hover .slick-next::before,
+.carruselAccesorios .slick-next:hover .slick-prev::before {
+  color: var(--primary-color);
+}
+/* Carrusel accesorios end */
+
+/* Home end */
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .page {
+    padding-top: 45px;
+  }
+
+  header.fixed + .page {
+    padding-top: 225px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1800px) {
+}

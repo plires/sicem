@@ -1,0 +1,88 @@
+/* Tamaños */
+.small {
+  font-size: 12px !important;
+  padding: 5px 10px !important;
+}
+
+.medium {
+  font-size: 14px !important;
+  padding: 8px 16px !important;
+}
+
+.large {
+  font-size: 16px !important;
+  padding: 10px 20px !important;
+}
+
+/* Tipos (colores) */
+.light {
+  border: solid 1px white !important;
+  background-color: white !important;
+  color: var(--primary-color) !important;
+}
+
+.light:hover {
+  border: solid 1px white !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.secondary {
+  border: solid 1px var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.secondary:hover {
+  border: solid 1px white !important;
+  background-color: white !important;
+  color: var(--secondary-color) !important;
+}
+
+.dark {
+  border: solid 1px white;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.dark:hover {
+  border: solid 1px var(--primary-color);
+  background-color: white;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .small {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+  }
+
+  .medium {
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+  }
+
+  .large {
+    font-size: 18px !important;
+    padding: 12px 24px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

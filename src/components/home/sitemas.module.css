@@ -1,0 +1,130 @@
+.sistemasMobile {
+  margin-bottom: 30px;
+}
+
+.sistemasMobile h2 {
+  margin-bottom: 30px;
+}
+
+.separador {
+  margin-bottom: 60px;
+}
+
+.content {
+  border: solid 3px var(--secondary-color);
+  padding: 1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.content h3 br {
+  display: none;
+}
+
+.data {
+  padding: 1rem;
+  background: var(--secondary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data ul {
+  margin: 0;
+}
+
+.data li {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.data li:last-child {
+  margin-bottom: 0;
+}
+
+.data span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: white;
+  color: var(--secondary-color);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .data {
+    min-height: 194px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .sistemasMobile h2 {
+    margin-bottom: 0;
+  }
+
+  .content h3 br {
+    display: inline-block;
+  }
+
+  .content h3 {
+    order: 1;
+    color: var(--secondary-color);
+    font-size: 2.75rem;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-height: 650px;
+  }
+
+  .data {
+    display: none;
+  }
+}
+
+@media (min-width: 1800px) {
+}

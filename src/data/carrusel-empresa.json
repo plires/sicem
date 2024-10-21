@@ -1,0 +1,58 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "img_src_opt": "carrusel-empresa-1.webp",
+      "img_src": "carrusel-empresa-1.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 1"
+    },
+    {
+      "id": 2,
+      "img_src_opt": "carrusel-empresa-2.webp",
+      "img_src": "carrusel-empresa-2.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 2"
+    },
+    {
+      "id": 3,
+      "img_src_opt": "carrusel-empresa-3.webp",
+      "img_src": "carrusel-empresa-3.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 3"
+    },
+    {
+      "id": 4,
+      "img_src_opt": "carrusel-empresa-4.webp",
+      "img_src": "carrusel-empresa-4.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 4"
+    },
+    {
+      "id": 5,
+      "img_src_opt": "carrusel-empresa-5.webp",
+      "img_src": "carrusel-empresa-5.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 5"
+    },
+    {
+      "id": 6,
+      "img_src_opt": "carrusel-empresa-6.webp",
+      "img_src": "carrusel-empresa-6.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 6"
+    },
+    {
+      "id": 7,
+      "img_src_opt": "carrusel-empresa-7.webp",
+      "img_src": "carrusel-empresa-7.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 7"
+    },
+    {
+      "id": 8,
+      "img_src_opt": "carrusel-empresa-8.webp",
+      "img_src": "carrusel-empresa-8.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 8"
+    },
+    {
+      "id": 9,
+      "img_src_opt": "carrusel-empresa-9.webp",
+      "img_src": "carrusel-empresa-9.jpg",
+      "img_alt": "imagen carrusel elevadores sicem - 9"
+    }
+  ]
+}

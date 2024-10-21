@@ -1,0 +1,103 @@
+{
+  "accesorios": [
+    {
+      "id": 1,
+      "img_src_opt": "accesorios-motores.png",
+      "img_src": "accesorios-motores.webp",
+      "img_alt": "motores - accesorios para elevadores sicem",
+      "title": "motores",
+      "type_card": "small",
+      "description": "Motores de una y dos velocidades, diseñados específicamente para ascensores, tanto convencionales como chatos, con diversas capacidades de potencia adaptadas a las necesidades de cada cliente."
+    },
+    {
+      "id": 2,
+      "img_src_opt": "accesorios-ruedas-arcata.png",
+      "img_src": "accesorios-ruedas-arcata.webp",
+      "img_alt": "ruedas-arcata - accesorios para elevadores sicem",
+      "title": "RUEDAS PARA <br />ARCATA",
+      "type_card": "small",
+      "description": "Vulcanizadas, de distintas medidas."
+    },
+    {
+      "id": 3,
+      "img_src_opt": "accesorios-bastidores.png",
+      "img_src": "accesorios-bastidores.webp",
+      "img_alt": "bastidores - accesorios para elevadores sicem",
+      "title": "BASTIDORES",
+      "type_card": "small",
+      "description": "Bastidores estándar y especiales fabricados en hierro en forma de U, equipados con guías, colisas y tensores con prensacables, tanto para el coche como para el contrapeso."
+    },
+    {
+      "id": 4,
+      "img_src_opt": "accesorios-poleas.png",
+      "img_src": "accesorios-poleas.webp",
+      "img_alt": "poleas - accesorios para elevadores sicem",
+      "title": "poleas",
+      "type_card": "small",
+      "description": "Poleas con amplia disponibilidad de medidas y numero de canaletas de acuerdo a cada necesidad."
+    },
+    {
+      "id": 5,
+      "img_src_opt": "accesorios-cables.png",
+      "img_src": "accesorios-cables.webp",
+      "img_alt": "cables - accesorios para elevadores sicem",
+      "title": "cable",
+      "type_card": "small",
+      "description": "Cables de acero con alma textil, diseñados especialmente para ascensores y aplicaciones de alta velocidad. Somos distribuidores de IPH, una empresa líder en Argentina y a nivel mundial."
+    },
+    {
+      "id": 6,
+      "img_src_opt": "accesorios-guias.png",
+      "img_src": "accesorios-guias.webp",
+      "img_alt": "guias - accesorios para elevadores sicem",
+      "title": "GUÍAS",
+      "type_card": "small",
+      "description": "Guías calibradas y cepilladas según normas internacionales, disponibles en una variedad de modelos para satisfacer diversas necesidades. Incluyen empalmes y bulones para una instalación óptima."
+    },
+    {
+      "id": 7,
+      "img_src_opt": "accesorios-puertas.png",
+      "img_src": "accesorios-puertas.webp",
+      "img_alt": "puertas - accesorios para elevadores sicem",
+      "title": "PUERTAS DE PISO <br />Y CABINA",
+      "type_card": "medium",
+      "description": "Distribuidores de la marca Wittur, que ofrece productos fabricados según las normas EN81. Disponemos de una amplia variedad de modelos y aplicaciones, incluyendo opciones estándar, vidriadas y navales."
+    },
+    {
+      "id": 8,
+      "img_src_opt": "accesorios-controles.png",
+      "img_src": "accesorios-controles.webp",
+      "img_alt": "controles - accesorios para elevadores sicem",
+      "title": "CONTROLES, <br />BOTONERAS <br />E INDICACIONES <br />DE POSICIÓN",
+      "type_card": "medium",
+      "description": "Somos distribuidores de Automac SA, disponemos de una gran variedad de modelos acordes a cada necesidad, tanto en ascensores hidráulicos como electromecánicos En botoneras contamos con los últimos modelos realizados en vidrio templado. Amplia variedad de diseños de pulsadores."
+    },
+    {
+      "id": 9,
+      "img_src_opt": "accesorios-maquinas.png",
+      "img_src": "accesorios-maquinas.webp",
+      "img_alt": "maquinas - accesorios para elevadores sicem",
+      "title": "MAQUINAS",
+      "type_card": "small",
+      "description": "Máquinas con gran disponibilidad de medidas y numero de canaletas de acuerdo a cada necesidad."
+    },
+    {
+      "id": 10,
+      "img_src_opt": "accesorios-limitadores.png",
+      "img_src": "accesorios-limitadores.webp",
+      "img_alt": "limitadores - accesorios para elevadores sicem",
+      "title": "LIMITADORES <br />DE VELOCIDAD",
+      "type_card": "small",
+      "description": "Limitadores de velocidad fabricados según normas En81 y Mercosur. Cuenta con una gran gama de accionamiento desde 45 a 90 mts por segundo,  funciona por corte mecánico y eléctrico."
+    },
+    {
+      "id": 11,
+      "img_src_opt": "accesorios-cajas.png",
+      "img_src": "accesorios-cajas.webp",
+      "img_alt": "cajas - accesorios para elevadores sicem",
+      "title": "CAJAS <br />DE CUÑA",
+      "type_card": "small",
+      "description": "Cajas de cuña fabricadas en acero Sae 1 045, mecanizadas con tecnología CNC, según normas."
+    }
+  ]
+}

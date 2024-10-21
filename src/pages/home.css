@@ -1,0 +1,34 @@
+.home .content_card {
+  margin-bottom: 60px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .home .content_card {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home .content_card {
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .home .content_card {
+    margin-bottom: 180px;
+  }
+}
+
+@media (min-width: 1800px) {
+}

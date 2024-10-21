@@ -1,0 +1,81 @@
+{
+  "accesorios": [
+    {
+      "id": 1,
+      "img_src_opt": "motores.png",
+      "img_src": "motores.webp",
+      "img_alt": "motores - accesorios para elevadores sicem",
+      "title": "motores"
+    },
+    {
+      "id": 2,
+      "img_src_opt": "bastidores.png",
+      "img_src": "bastidores.webp",
+      "img_alt": "bastidores - accesorios para elevadores sicem",
+      "title": "bastidores"
+    },
+    {
+      "id": 3,
+      "img_src_opt": "cable.png",
+      "img_src": "cable.webp",
+      "img_alt": "cable - accesorios para elevadores sicem",
+      "title": "cable"
+    },
+    {
+      "id": 4,
+      "img_src_opt": "cajas-cuna.png",
+      "img_src": "cajas-cuna.webp",
+      "img_alt": "cajas-cuna - accesorios para elevadores sicem",
+      "title": "cajas de cuña"
+    },
+    {
+      "id": 5,
+      "img_src_opt": "controles.png",
+      "img_src": "controles.webp",
+      "img_alt": "controles - accesorios para elevadores sicem",
+      "title": "controles"
+    },
+    {
+      "id": 6,
+      "img_src_opt": "guias.png",
+      "img_src": "guias.webp",
+      "img_alt": "guias - accesorios para elevadores sicem",
+      "title": "guias"
+    },
+    {
+      "id": 7,
+      "img_src_opt": "limitadores-peso.png",
+      "img_src": "limitadores-peso.webp",
+      "img_alt": "limitadores-peso - accesorios para elevadores sicem",
+      "title": "limitadores-peso"
+    },
+    {
+      "id": 8,
+      "img_src_opt": "maquinas.png",
+      "img_src": "maquinas.webp",
+      "img_alt": "maquinas - accesorios para elevadores sicem",
+      "title": "maquinas"
+    },
+    {
+      "id": 9,
+      "img_src_opt": "poleas.png",
+      "img_src": "poleas.webp",
+      "img_alt": "poleas - accesorios para elevadores sicem",
+      "title": "poleas"
+    },
+    {
+      "id": 10,
+      "img_src_opt": "puertas.png",
+      "img_src": "puertas.webp",
+      "img_alt": "puertas - accesorios para elevadores sicem",
+      "title": "puertas"
+    },
+    {
+      "id": 11,
+      "img_src_opt": "rueda-arcata.png",
+      "img_src": "rueda-arcata.webp",
+      "img_alt": "rueda-arcata - accesorios para elevadores sicem",
+      "title": "rueda para arcata"
+    }
+  ]
+}

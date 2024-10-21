@@ -1,0 +1,56 @@
+.slick-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  height: 100% !important;
+  top: 48.5% !important;
+  padding-bottom: 10px;
+  display: flex !important;
+  justify-content: center;
+  background: var(--secondary-color) !important;
+  width: 25px !important;
+  align-items: center;
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1000px) {
+  .slick-arrow {
+    top: 48.8% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+  .slick-arrow {
+    top: 49% !important;
+    width: 30px !important;
+  }
+}
