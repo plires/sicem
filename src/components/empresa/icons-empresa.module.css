@@ -1,11 +1,18 @@
-.carruselEmpresa {
-  margin-bottom: -100px;
+.iconsEmpresa {
+  margin-bottom: 60px;
+}
+
+.iconsEmpresa h2 {
+  margin-bottom: 30px;
 }
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
+  .iconsEmpresa h2 {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 992px) {

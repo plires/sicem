@@ -16,7 +16,7 @@ const Card = ({
 }) => {
   return (
     <section className={`container-fluid content_card ${styles.content_card}`}>
-      <div className={`${styles.pattern}`}></div>
+      <div className={`${styles.pattern} pattern`}></div>
       <div className='container'>
         <div className='row'>
           <div className='col-sm-12 col-lg-10 offset-lg-1'>
@@ -28,7 +28,6 @@ const Card = ({
                     <source srcSet={getImageURL(img)} type='image/jpg' />
 
                     <img
-                      data-aos='fade-up'
                       className={`img-fluid ${styles.imgPrincipal}`}
                       src={getImageURL(img)}
                       alt='imagen principal faja ascensores sicem'

@@ -13,6 +13,9 @@
   background: var(--primary-color);
   padding: 30px 12px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content_img img {

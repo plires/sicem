@@ -17,6 +17,7 @@
   background: var(--primary-color);
   z-index: -1;
   mix-blend-mode: multiply;
+  opacity: 0.9;
 }
 
 .contentImg {

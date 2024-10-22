@@ -63,7 +63,7 @@ header.fixed + .page {
 
 /* Home */
 .page .home {
-  margin-top: -45px;
+  margin-top: -25px;
 }
 
 header.fixed .page .home {
@@ -106,6 +106,24 @@ header.fixed .page .home {
 
 /* Home end */
 
+/* Empresa */
+.page .empresa {
+  margin-top: -25px;
+}
+/* Empresa end */
+
+/* Productos */
+.page .productos {
+  margin-top: -25px;
+}
+/* Productos end */
+
+/* Accesorios */
+.page .accesorios {
+  margin-top: -25px;
+}
+/* Accesorios end */
+
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 }
@@ -125,6 +143,30 @@ header.fixed .page .home {
   header.fixed + .page {
     padding-top: 225px;
   }
+
+  /* Home */
+  .page .home {
+    margin-top: -45px;
+  }
+  /* Home end */
+
+  /* Empresa */
+  .page .empresa {
+    margin-top: -45px;
+  }
+  /* Empresa end */
+
+  /* Productos */
+  .page .productos {
+    margin-top: -45px;
+  }
+  /* Productos end */
+
+  /* Accesorios */
+  .page .accesorios {
+    margin-top: -45px;
+  }
+  /* Accesorios end */
 }
 
 @media (min-width: 1200px) {
