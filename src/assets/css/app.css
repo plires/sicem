@@ -115,12 +115,6 @@ textarea:focus {
 button:focus {
   box-shadow: none !important;
 }
-
-/* button:not(.collapsed) {
-  background-color: transparent !important;
-} */
-/* Inputs end */
-
 /* Home end */
 
 /* Empresa */
@@ -190,6 +184,12 @@ button:focus {
     margin-top: -45px;
   }
   /* Accesorios end */
+
+  /* Contacto */
+  .page .contacto {
+    margin-top: -45px;
+  }
+  /* Contacto end */
 }
 
 @media (min-width: 1200px) {
