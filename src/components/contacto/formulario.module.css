@@ -1,0 +1,74 @@
+.inputContainer {
+  position: relative !important;
+}
+
+.input {
+  background: transparent !important;
+  border-bottom: solid 1px var(--primary-color) !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  font-size: 16px;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.label {
+  position: absolute !important;
+  left: 10px !important;
+  top: 10px !important;
+  font-size: 16px !important;
+  color: var(--primary-color) !important;
+  transition: all 0.3s ease !important;
+  pointer-events: none !important; /* Evita que el label sea clickeable */
+}
+
+.inputContainer:has(.input:focus) .label,
+.inputContainer:has(.input:not(:placeholder-shown)) .label {
+  color: var(--secondary-color) !important;
+  top: -10px !important;
+  font-size: 12px !important;
+}
+
+.contentLabelNewsletter input {
+  margin-right: 5px;
+}
+
+.contentLabelNewsletter label {
+  font-size: 0.65rem;
+  color: rgb(180, 180, 180);
+}
+
+.btnSend {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btnSend:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

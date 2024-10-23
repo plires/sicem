@@ -104,6 +104,23 @@ header.fixed .page .home {
 }
 /* Carrusel accesorios end */
 
+/* Inputs */
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  border-bottom: var(--secondary-color) solid 1px !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+/* button:not(.collapsed) {
+  background-color: transparent !important;
+} */
+/* Inputs end */
+
 /* Home end */
 
 /* Empresa */
@@ -123,6 +140,12 @@ header.fixed .page .home {
   margin-top: -25px;
 }
 /* Accesorios end */
+
+/* Contacto */
+.page .contacto {
+  margin-top: -25px;
+}
+/* Contacto end */
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {

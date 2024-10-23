@@ -1,0 +1,102 @@
+.contentFormulario {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  margin-bottom: 60px;
+  padding: 1rem;
+  margin-top: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.formaCalada {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.formaCalada h2 {
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.contentFormulario p {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.imagenInferior {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.imagenInferior img {
+  mix-blend-mode: multiply;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--primary-color);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
+.contentFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentFooter a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contentFooter a:last-child {
+  margin-bottom: 0;
+}
+
+.contentFooter a:hover {
+  opacity: 0.8;
+}
+
+.contentFooter a img {
+  max-width: 32px;
+  margin-right: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .contentFormulario p {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

@@ -1,3 +1,7 @@
+.home {
+  margin-bottom: 60px;
+}
+
 .home .content_card {
   margin-bottom: 60px;
 }
@@ -13,6 +17,10 @@
 }
 
 @media (min-width: 992px) {
+  .home {
+    margin-bottom: 100px;
+  }
+
   .home .content_card {
     margin-bottom: 150px;
   }

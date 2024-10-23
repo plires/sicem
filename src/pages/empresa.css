@@ -1,6 +1,6 @@
-.empresa {
+/* .empresa {
   margin-bottom: 90px;
-}
+} */
 
 .empresa .content_card {
   margin-bottom: 60px;
@@ -31,10 +31,6 @@
 
   .empresa .content_card p {
     font-size: 1.15rem;
-  }
-
-  #root:has(.empresa) footer {
-    margin-top: 92px;
   }
 }
 
