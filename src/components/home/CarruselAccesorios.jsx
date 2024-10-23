@@ -55,7 +55,7 @@ const CarruselAccesorios = () => {
     >
       <Slider {...settings}>
         {accesorios.map(item => (
-          <Link className='transition' to='#' key={item.id}>
+          <Link className='transition' to='/accesorios' key={item.id}>
             <div className={`${styles.content}`}>
               <picture>
                 <source
