@@ -10,7 +10,6 @@ const CarruselEmpresa = () => {
   const images = getImgCarruselEmpresa('images')
   const settings = {
     autoplay: false,
-    infinite: true,
     className: 'center',
     pauseOnHover: true,
     centerMode: true,

@@ -13,7 +13,6 @@ const CarruselAccesorios = () => {
   const accesorios = getAccesorios('accesorios')
   const settings = {
     autoplay: false,
-    infinite: true,
     className: 'center',
     pauseOnHover: true,
     centerMode: true,

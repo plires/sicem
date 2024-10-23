@@ -17,7 +17,6 @@ import styles from './carrusel.module.css'
 const Carrusel = () => {
   const settings = {
     autoplay: false,
-    infinite: true,
     className: 'center',
     pauseOnHover: true,
     centerMode: true,
