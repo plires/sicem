@@ -16,9 +16,6 @@ export const validation = values => {
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
     errors.email = 'Ingresá un correo válido'
   }
-  if (!values.phone) {
-    errors.phone = 'Ingresá un teléfono'
-  }
   if (!values.comments) {
     errors.comments = 'Enviá tu mensaje'
   }

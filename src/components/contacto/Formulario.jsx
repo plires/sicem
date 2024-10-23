@@ -3,7 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from 'formik'
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import ErrorInput from '@/components/commons/ErrorInput'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import Loader from '@/components/commons/Loader'
 import { validation } from '@/utils/dataUtils'
 import 'react-toastify/dist/ReactToastify.css'
@@ -35,7 +35,7 @@ export default function Formulario() {
       delete values.newsletter
     }
 
-    values.origin = import.meta.env.VITE_NAME_LANDING
+    values.origin = import.meta.env.VITE_FORM_ORIGIN
 
     const urlParams = new URLSearchParams(window.location.search)
 
@@ -65,7 +65,7 @@ export default function Formulario() {
 
     try {
       const res = await axios.post(
-        import.meta.env.VITE_ROOT + '/php/process.php',
+        import.meta.env.VITE_ROOT + 'php/process.php',
         values,
       )
 
@@ -110,7 +110,6 @@ export default function Formulario() {
       {loading && <Loader />}
       <section className={`${styles.formulario}`}>
         <div className='pattern'></div>
-        <ToastContainer />
 
         <div id='formulario'>
           <Formik

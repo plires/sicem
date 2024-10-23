@@ -6,39 +6,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 class App
 {
 
-  public function subscribeUserInPerfit($post)
-  {
-
-    if (is_object($post)) {
-      $post = (array) $post;
-    }
-
-    if (isset($post['newsletter'])) {
-
-      $perfit = new PerfitSDK\Perfit(['apiKey' => $_ENV['VITE_PERFIT_API_KEY']]);
-      $listId = $_ENV['VITE_PERFIT_LIST'];
-
-      $response = $perfit->post(
-        '/lists/' . $listId . '/contacts',
-        [
-          'firstName' => $post['name'],
-          'email' => $post['email'],
-          'customFields' =>
-          [
-            [
-              'id' => 12,
-              'value' => $post['utm_source']
-            ]
-          ]
-        ]
-      );
-
-      return $response;
-    }
-
-    return false;
-  }
-
   public function validEmail($email)
   {
     $mail_valid = 0;
@@ -92,10 +59,6 @@ class App
 
     if ($this->emptyField($require->name)) {
       array_push($errors, 'Ingresá tu nombre.');
-    }
-
-    if ($this->emptyField($require->phone)) {
-      array_push($errors, 'Ingresá un teléfono de contacto.');
     }
 
     if ($this->emptyField($require->comments)) {
@@ -154,7 +117,7 @@ class App
 
       case 'Contacto Cliente':
         $email['template'] = $this->selectEmailTemplate($post, 'to_client', $destinationEmail);
-        $email['subject'] = 'Nuevo Consulta desde Landing ' . $_ENV['VITE_NAME_APP'];
+        $email['subject'] = 'Nuevo Consulta desde Formulario web - ' . $_ENV['VITE_NAME_APP'];
         break;
 
       case 'Contacto Usuario':
@@ -221,7 +184,6 @@ class App
 
     (isset($post['name'])) ? $name = $post['name'] : $name = null;
     (isset($post['email'])) ? $email = $post['email'] : $email = null;
-    (isset($post['phone'])) ? $phone = $post['phone'] : $phone = null;
     (isset($post['comments'])) ? $comments = $post['comments'] : $comments = null;
     (isset($post['origin'])) ? $origin = $post['origin'] : $origin = null;
     (isset($post['utm_source'])) ? $utm_source = $post['utm_source'] : $utm_source = 'no set';
@@ -236,15 +198,10 @@ class App
       '{email_client}',
       '{name_user}',
       '{email_user}',
-      '{phone_user}',
       '{comments_user}',
       '{utm_source}',
       '{origin}',
       '{date}',
-      '{whatsapp}',
-      '{facebook}',
-      '{instagram}',
-      '{linkedin}',
       '{base}'
     );
 
@@ -253,15 +210,10 @@ class App
       $_ENV['VITE_MAIL_CONTACTO'],
       $name,
       $email,
-      $phone,
       $comments,
       $utm_source,
       $origin,
       date('d-m-Y'),
-      $_ENV['VITE_LINK_TO_WHATSAPP'],
-      $_ENV['VITE_FACEBOOK'],
-      $_ENV['VITE_INSTAGRAM'],
-      $_ENV['VITE_LINKEDIN'],
       BASE
     );
 

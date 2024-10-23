@@ -10,7 +10,7 @@
   <!-- Deshabilite la escala automatica en iOS 10 Mail por completo -->
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
   <!-- Dile a iOS que no enlace automaticamente ciertas cadenas de texto. -->
-  <title>Movilizando tu impacto</title>
+  <title>Elevadores Sicem</title>
   <!-- La etiqueta del titulo se muestra en las notificaciones por correo electronico, como Android 4.4. -->
 
   <!-- Web Font / @font-face : BEGIN -->
@@ -203,7 +203,7 @@
 
     .button-td-primary:hover,
     .button-a-primary:hover {
-      background: #623cea !important;
+      background: #0077b6 !important;
       border-color: #FFFFFF !important;
       color: #FFFFFF !important;
     }
@@ -335,7 +335,7 @@
       <tr style="background-color: #fefefe;">
         <td style="padding: 40px; padding-top: 0px;">
 
-          <h2 class="fallback-font" style="margin: 0 0 20px 0; padding-top: 40px; font-family: 'Montserrat', sans-serif; font-size: 22px; line-height: 32px; color: #623cea; text-align: center; font-weight: 700; text-transform: uppercase;">
+          <h2 class="fallback-font" style="margin: 0 0 20px 0; padding-top: 40px; font-family: 'Montserrat', sans-serif; font-size: 22px; line-height: 32px; color: #0077b6; text-align: center; font-weight: 700; text-transform: uppercase;">
             <strong>GRACIAS POR TU CONTACTO</strong>
           </h2>
 
@@ -344,15 +344,7 @@
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            ¡Gracias por tu interés en nuestros productos de merchandising empresarial! Hemos recibido tu consulta y queremos asegurarte que un asesor especializado se pondrá en contacto con vos a la brevedad para brindarte toda la información que necesitás.
-          </p>
-
-          <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            Estamos para ayudarte a encontrar las soluciones perfectas a tus necesidades de branding y promoción.
-          </p>
-
-          <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            ¡Esperamos poder colaborar a tu marca muy pronto!
+            ¡Gracias por tu interés en nuestros productos! Hemos recibido tu consulta y queremos asegurarte que un asesor especializado se pondrá en contacto con vos a la brevedad para brindarte toda la información que necesitás.
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
@@ -380,10 +372,6 @@
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            <strong>Teléfono:</strong> {phone_user}
-          </p>
-
-          <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
             <strong>Comentarios:</strong> {comments_user}
           </p>
 
@@ -396,8 +384,8 @@
       <!-- Texto end-->
 
       <!-- Boton : BEGIN -->
-      <tr style="background-color: #623cea;">
-        <td style="background-color: #623cea; text-align: center; padding: 40px;">
+      <tr style="background-color: #0077b6;">
+        <td style="background-color: #0077b6; text-align: center; padding: 40px;">
 
           <p class="fallback-font" style="margin: 0 0 10px; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #FFFFFF; text-align: center; font-weight: 400;">
             <strong>Tenés otra consulta?</strong>
@@ -415,31 +403,6 @@
         </td>
       </tr>
       <!-- Boton : END -->
-
-      <!-- Footer : BEGIN -->
-      <tr align="center" style="background-color: #FFFFFF;">
-        <td align="center" style="background-color: #FFFFFF;padding: 10px;">
-
-          <a href="{whatsapp}" target="_blank" rel="noopener">
-            <img src="{base}img-email/whatsapp.png" style="margin:0; padding:0; border:none; display:inline-block; width: 32px; height: auto; padding-left: 5px; padding-right: 5px;" alt="logo whatsapp" />
-          </a>
-
-          <a href="{facebook}" target="_blank" rel="noopener">
-            <img src="{base}img-email/facebook.png" style="margin:0; padding:0; border:none; display:inline-block; width: 32px; height: auto; padding-left: 5px; padding-right: 5px;" alt="logo facebook" />
-          </a>
-
-          <a href="{instagram}" target="_blank" rel="noopener">
-            <img src="{base}img-email/instagram.png" style="margin:0; padding:0; border:none; display:inline-block; width: 32px; height: auto; padding-left: 5px; padding-right: 5px;" alt="logo instagram" />
-          </a>
-
-          <a href="{linkedin}" target="_blank" rel="noopener">
-            <img src="{base}img-email/linkedin.png" style="margin:0; padding:0; border:none; display:inline-block; width: 32px; height: auto; padding-left: 5px; padding-right: 5px;" alt="logo linkedin" />
-          </a>
-
-
-        </td>
-      </tr>
-      <!-- Footer : END -->
 
     </table>
     <!-- Cuerpo del Email : END -->

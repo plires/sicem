@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 
 import logoLarge from '@/assets/img/logo-large.svg'
 import logoSmall from '@/assets/img/logo-small.svg'
@@ -56,6 +57,7 @@ const Header = () => {
 
   return (
     <header className='transition' ref={headerElement}>
+      <ToastContainer />
       <div className='content_logo'>
         <Link to='/' onClick={() => closeNavMobile()}>
           <img
