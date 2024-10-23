@@ -33,11 +33,17 @@ const ContentForm = () => {
         <div className={`${styles.background}`}></div>
       </div>
       <div data-aos='fade-up' className={`${styles.contentFooter}`}>
-        <Link className='transition' to='#'>
+        <Link
+          className='transition'
+          to={`mailto:${import.meta.env.VITE_MAIL_TO_SEND}`}
+        >
           <img src={iconMail} alt='icono mail' />
           {import.meta.env.VITE_MAIL_CONTACTO}
         </Link>
-        <Link className='transition' to='#'>
+        <Link
+          className='transition'
+          to={`tel:${import.meta.env.VITE_TEL_TO_SEND}`}
+        >
           <img src={iconPhone} alt='icono phone' />
           {import.meta.env.VITE_TEL_TO_SHOW}
         </Link>
