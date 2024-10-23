@@ -53,6 +53,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className='row'>
+          <div className='col-md-12 contentLibre p-0'>
+            <Link
+              className='transition'
+              to='https://www.librecomunicacion.net/'
+              target='_blank'
+              rel='noopener'
+            >
+              by libre
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   )

@@ -34,6 +34,21 @@ footer .item:last-child:hover {
   opacity: 1;
 }
 
+.contentLibre {
+  border-top: solid 1px white;
+  margin-top: 20px !important;
+  text-align: right;
+}
+
+.contentLibre a {
+  color: white;
+  font-size: 0.65rem;
+}
+
+.contentLibre a:hover {
+  opacity: 0.6;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 }
