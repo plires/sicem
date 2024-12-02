@@ -3,18 +3,17 @@ import Plus from '@/components/commons/Plus'
 import CustomNextArrow from '@/components/commons/CustomNextArrow'
 import CustomPrevArrow from '@/components/commons/CustomPrevArrow'
 
+import { getImageURL, getCabinas } from '@/utils/dataUtils'
+
 import Slider from 'react-slick'
-import imageSlideA from '@/assets/img/slide-ascensores-a.jpg'
-import imageSlideB from '@/assets/img/slide-ascensores-b.jpg'
-import imageSlideC from '@/assets/img/slide-ascensores-c.jpg'
-import imageSlideD from '@/assets/img/slide-ascensores-d.jpg'
-import imageSlideE from '@/assets/img/slide-ascensores-e.jpg'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import styles from './carrusel.module.css'
 
 const Carrusel = () => {
+  const cabinas = getCabinas('cabinas')
+
   const settings = {
     autoplay: false,
     className: 'center',
@@ -55,48 +54,47 @@ const Carrusel = () => {
   }
   return (
     <section data-aos='fade-up' className={`${styles.carruselProductos}`}>
-      <Slider {...settings}>
-        <Link to='/productos' className={`${styles.content}`}>
-          <div className={`${styles.overlay}`}></div>
-          <img className='img-fluid transition' src={imageSlideA} alt='alt' />
-          <div className={`${styles.data}`}>
-            <h3 className='transition'>CABINA CAMERINO</h3>
-            <Plus type='light' />
-          </div>
-        </Link>
-        <Link to='/productos' className={`${styles.content}`}>
-          <div className={`${styles.overlay}`}></div>
-          <img className='img-fluid transition' src={imageSlideB} alt='alt' />
-          <div className={`${styles.data}`}>
-            <h3 className='transition'>MONTAVEHÍCULOS</h3>
-            <Plus type='light' />
-          </div>
-        </Link>
-        <Link to='/productos' className={`${styles.content}`}>
-          <div className={`${styles.overlay}`}></div>
-          <img className='img-fluid transition' src={imageSlideC} alt='alt' />
-          <div className={`${styles.data}`}>
-            <h3 className='transition'>cabina montecarlo</h3>
-            <Plus type='light' />
-          </div>
-        </Link>
-        <Link to='/productos' className={`${styles.content}`}>
-          <div className={`${styles.overlay}`}></div>
-          <img className='img-fluid transition' src={imageSlideD} alt='alt' />
-          <div className={`${styles.data}`}>
-            <h3 className='transition'>montacargas</h3>
-            <Plus type='light' />
-          </div>
-        </Link>
-        <Link to='/productos' className={`${styles.content}`}>
-          <div className={`${styles.overlay}`}></div>
-          <img className='img-fluid transition' src={imageSlideE} alt='alt' />
-          <div className={`${styles.data}`}>
-            <h3 className='transition'>cabina panorámica</h3>
-            <Plus type='light' />
-          </div>
-        </Link>
-      </Slider>
+      <>
+        {cabinas.length > 0 ? (
+          <Slider {...settings}>
+            {cabinas.map(cabina => (
+              <Link
+                key={cabina.id}
+                to='/productos'
+                className={`${styles.content}`}
+              >
+                <div className={`${styles.overlay}`}></div>
+                <picture>
+                  <source
+                    srcSet={getImageURL(cabina.img_src_opt)}
+                    type='image/webp'
+                  />
+                  <source
+                    srcSet={getImageURL(cabina.img_src)}
+                    type='image/jpg'
+                  />
+                  <img
+                    className='img-fluid transition'
+                    src={getImageURL(cabina.img_src)}
+                    alt={cabina.img_alt}
+                  />
+                </picture>
+                <div className={`${styles.data}`}>
+                  <h3 className='transition'>{cabina.title}</h3>
+                  <Plus type='light' />
+                </div>
+              </Link>
+            ))}
+          </Slider>
+        ) : (
+          <>
+            <h4 className={`${styles.sinCabinas}`}>
+              En este momento no hay cabinas disponibles para mostrar
+            </h4>
+            <br />
+          </>
+        )}
+      </>
     </section>
   )
 }

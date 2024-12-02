@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import iconPhone from '@/assets/img/telefono.svg'
+import iconWhatsapp from '@/assets/img/whatsapp.svg'
 import iconMail from '@/assets/img/mail.svg'
 import iconLocation from '@/assets/img/location.svg'
 import iconHorario from '@/assets/img/horario.svg'
@@ -13,6 +14,17 @@ const Footer = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 data'>
+            <Link
+              className='item transition'
+              to={`tel:${import.meta.env.VITE_WHATSAPP_TO_SEND}`}
+            >
+              <img
+                className='img-fluid'
+                src={iconWhatsapp}
+                alt='icono whatsap'
+              />
+              <span>{import.meta.env.VITE_WHATSAPP_TO_SHOW}</span>
+            </Link>
             <Link
               className='item transition'
               to={`tel:${import.meta.env.VITE_TEL_TO_SEND}`}

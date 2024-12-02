@@ -18,6 +18,11 @@
   display: none;
 }
 
+.contentIcon h3,
+.contentIcon h3 span {
+  font-weight: 700 !important;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
   .contentIcon img {

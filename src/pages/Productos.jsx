@@ -26,7 +26,7 @@ const Productos = () => {
       />
       <Product
         title='cabina panorámica'
-        description='Cabina realizada en espejo clásico o fumee | zócalo | pasamanos | marco de techo.  <br /><br />Suspendido en acero inoxidable | botonera de paño entero con indicador color | piso de mármol.'
+        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, asperiores cupiditate! Expedita, accusantium optio earum impedit veritatis sapiente a aut, ipsam labore repellendus repudiandae illo esse.'
         imageProdOpt='cabina-panoramica.webp'
         imageProd='cabina-panoramica.jpg'
         altImage='cabina de ascensor panoramica'
@@ -34,7 +34,7 @@ const Productos = () => {
       <Product
         order='initial'
         title='cabina camerino'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, asperiores cupiditate! Expedita, accusantium optio earum impedit veritatis sapiente a aut, ipsam labore repellendus repudiandae illo esse.'
+        description='Cabina realizada en espejo clásico o fumee | zócalo | pasamanos | marco de techo.  <br /><br />Suspendido en acero inoxidable | botonera de paño entero con indicador color | piso de mármol.'
         imageProdOpt='cabina-camerino.webp'
         imageProd='cabina-camerino.jpg'
         altImage='cabina de ascensor camerino'

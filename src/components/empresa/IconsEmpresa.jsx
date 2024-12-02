@@ -13,17 +13,26 @@ const IconsEmpresa = () => {
 
       <div className='row'>
         <Icon
-          title='74 años <br />de trayectoria'
+          prefix=''
+          suffix=' años <br />de trayectoria'
+          value='76'
+          title={true}
           size='col-sm-4'
           imgIcon={'icon-trayectoria.svg'}
         />
         <Icon
-          title='+ 3000 <br /> instalaciones'
+          prefix='+ '
+          suffix=' <br /> instalaciones'
+          value='3000'
+          title={true}
           size='col-sm-4'
           imgIcon={'icon-instalaciones.svg'}
         />
         <Icon
-          title='Presencia <br />en 5 países'
+          prefix='Presencia <br />en '
+          suffix=' países'
+          value='5'
+          title={true}
           size='col-sm-4'
           imgIcon={'icon-presencia.svg'}
         />

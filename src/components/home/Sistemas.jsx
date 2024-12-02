@@ -13,7 +13,7 @@ const Sistemas = () => {
         <div className='row'>
           <div className='col-md-12'>
             <h2 data-aos='fade-up' className='title'>
-              sistema de nuestras cabinas
+              Tipo de sistemas de ascensores
             </h2>
           </div>
         </div>

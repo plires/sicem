@@ -24,7 +24,7 @@ const Accesorios = () => {
           <div className='col-md-12'>
             <h2 className='title'>
               contamos con una gama amplia <br />
-              de accesorios para tu cabina
+              de accesorios para tu ascensor
             </h2>
           </div>
         </div>

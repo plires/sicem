@@ -13,7 +13,7 @@ const Home = () => {
       <Video />
       <Card
         title='DETRÁS DE LOS ASCENSORES'
-        description='En Sicem somos líderes en soluciones de <span>equipos de elevación, </span> especializados en el diseño, fabricación e instalación de  <span>ascensores innovadores.</span> Desde nuestra empresa, hemos estado comprometidos con la innovación, ofreciendo ascensores, cabinas personalizadas y accesorios de alta calidad que transforman la movilidad en edificios residenciales, comerciales e industriales.'
+        description='En Sicem somos líderes en soluciones de <span>equipos de elevación, </span> especializados en el diseño y fabricación de  <span>ascensores innovadores.</span> Desde nuestra empresa, hemos estado comprometidos con la innovación, ofreciendo ascensores, cabinas personalizadas y accesorios de alta calidad que transforman la movilidad en edificios residenciales, comerciales e industriales.'
         withButton='true'
         txtButton='Sobre la empresa'
         typeButton='light'

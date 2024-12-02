@@ -1,0 +1,39 @@
+{
+  "cabinas": [
+    {
+      "id": 1,
+      "title": "CABINA CAMERINO",
+      "img_src": "slide-ascensores-a.jpg",
+      "img_src_opt": "slide-ascensores-a.webp",
+      "img_alt": "imagen carrusel cabina camerino de ascensor sicem"
+    },
+    {
+      "id": 2,
+      "title": "MONTAVEHÍCULOS",
+      "img_src": "slide-ascensores-b.jpg",
+      "img_src_opt": "slide-ascensores-b.webp",
+      "img_alt": "imagen carrusel montavehículos sicem"
+    },
+    {
+      "id": 3,
+      "title": "CABINA MONTECARLO",
+      "img_src": "slide-ascensores-c.jpg",
+      "img_src_opt": "slide-ascensores-c.webp",
+      "img_alt": "imagen carrusel cabina montecarlo de ascensor sicem"
+    },
+    {
+      "id": 4,
+      "title": "MONTACARGAS",
+      "img_src": "slide-ascensores-d.jpg",
+      "img_src_opt": "slide-ascensores-d.webp",
+      "img_alt": "imagen carrusel montacargas sicem"
+    },
+    {
+      "id": 5,
+      "title": "CABINA PANORAMICA",
+      "img_src": "slide-ascensores-e.jpg",
+      "img_src_opt": "slide-ascensores-e.webp",
+      "img_alt": "imagen carrusel cabina panoramica de ascensor sicem"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import imgOpt from './../../assets/img/background-form-contacto.webp'
 import imgNormal from './../../assets/img/background-form-contacto.jpg'
 import iconMail from './../../assets/img/contacto-icono-mail.svg'
+import iconWhatsapp from './../../assets/img/contacto-icono-whatsapp.svg'
 import iconPhone from './../../assets/img/contacto-icono-telefono.svg'
 import Formulario from '@/components/contacto/Formulario'
 
@@ -39,6 +40,15 @@ const ContentForm = () => {
         >
           <img src={iconMail} alt='icono mail' />
           {import.meta.env.VITE_MAIL_CONTACTO}
+        </Link>
+        <Link
+          target='_blank'
+          rel='noopener'
+          className='transition'
+          to={`${import.meta.env.VITE_WHATSAPP_TO_SEND}`}
+        >
+          <img src={iconWhatsapp} alt='icono whatsapp' />
+          {import.meta.env.VITE_WHATSAPP_TO_SHOW}
         </Link>
         <Link
           className='transition'
