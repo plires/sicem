@@ -16,7 +16,9 @@ const Footer = () => {
           <div className='col-md-12 data'>
             <Link
               className='item transition'
-              to={`tel:${import.meta.env.VITE_WHATSAPP_TO_SEND}`}
+              to={`${import.meta.env.VITE_WHATSAPP_TO_SEND}`}
+              target='_blank'
+              rel='noopener'
             >
               <img
                 className='img-fluid'
@@ -28,6 +30,8 @@ const Footer = () => {
             <Link
               className='item transition'
               to={`tel:${import.meta.env.VITE_TEL_TO_SEND}`}
+              target='_blank'
+              rel='noopener'
             >
               <img className='img-fluid' src={iconPhone} alt='icono telefono' />
               <span>{import.meta.env.VITE_TEL_TO_SHOW}</span>
@@ -36,6 +40,8 @@ const Footer = () => {
             <Link
               className='item transition'
               to={`mailto:${import.meta.env.VITE_MAIL_TO_SEND}`}
+              target='_blank'
+              rel='noopener'
             >
               <img className='img-fluid' src={iconMail} alt='icono mail' />
               <span>{import.meta.env.VITE_MAIL_TO_SHOW}</span>
