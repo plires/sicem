@@ -19,14 +19,14 @@ const Productos = () => {
       <Product
         order='initial'
         title='cabina montecarlo'
-        description='Realizada en acero inoxidable esmerilado| Medio paño en las tres caras en espejo | Botonera de paño entero | indicador de piso a color | zócalo, pasamanos y marco de techo | techo de chapa perforada | piso de mármol ideal para ascensores de alto transito, como hoteles y oficinas.'
+        description='Sólida, sobria y elegante, realizada en acero inoxidable esmerilado en su parte inferior con espejo en las tres caras en su parte superior. Posee una botonera de paño entero, con indicador de piso color, zócalo, pasamanos y marco de techo suspendido en acero inoxidable, techo de acero perforado al tono que permite pasar delicadamente la luz y piso de mármol. Todo el conjunto resulta ideal para espacios de alto tránsito, tales como hoteles y oficinas.'
         imageProdOpt='cabina-montecarlo.webp'
         imageProd='cabina-montecarlo.jpg'
         altImage='cabina de ascensor montecarlo'
       />
       <Product
-        title='cabina panorámica'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, asperiores cupiditate! Expedita, accusantium optio earum impedit veritatis sapiente a aut, ipsam labore repellendus repudiandae illo esse.'
+        title='cabina panorámico'
+        description='Totalmente vidriada, con estructura, zócalo, pasamanos y marco de techo suspendido en acero inoxidable esmerilado, con detalles de categoría, tales como la botonera de paño entero de acero inox, con indicador color y techo de acero inoxidable perforado o decorado, así como también el piso de mármol, dando una lujosa sensación de libertad y contacto con el exterior.'
         imageProdOpt='cabina-panoramica.webp'
         imageProd='cabina-panoramica.jpg'
         altImage='cabina de ascensor panoramica'
@@ -34,14 +34,14 @@ const Productos = () => {
       <Product
         order='initial'
         title='cabina camerino'
-        description='Cabina realizada en espejo clásico o fumee | zócalo | pasamanos | marco de techo.  <br /><br />Suspendido en acero inoxidable | botonera de paño entero con indicador color | piso de mármol.'
+        description='Cabina totalmente realizada en espejo clásico o fumee, con zócalo, pasamanos y marco de techo suspendido en acero inoxidable, posee además una botonera de paño entero con indicador color, y piso de mármol que completa un espacio muy elegante, ideal para edificios de categoría.'
         imageProdOpt='cabina-camerino.webp'
         imageProd='cabina-camerino.jpg'
         altImage='cabina de ascensor camerino'
       />
       <Product
         title='montavehículos'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, asperiores cupiditate! Expedita, accusantium optio earum impedit veritatis sapiente a aut, ipsam labore repellendus repudiandae illo esse.'
+        description='Realizada en chapa, con todos los controles y elementos de seguridad que requiere este tipo de elevadores, optimizando el espacio y el accionar del estacionamiento Se ofrece en la versión electromecánica o Hidráulica, brindando una gama de opciones que responde a las necesidades del cliente.'
         imageProdOpt='montavehiculos.webp'
         imageProd='montavehiculos.jpg'
         altImage='montavehiculos'
@@ -49,7 +49,7 @@ const Productos = () => {
       <Product
         order='initial'
         title='montacargas'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, asperiores cupiditate! Expedita, accusantium optio earum impedit veritatis sapiente a aut, ipsam labore repellendus repudiandae illo esse.'
+        description='Se realiza según las necesidades de transporte del cliente. Está diseñado solo para carga y utiliza botoneras de llamada y envío.'
         imageProdOpt='montacargas.webp'
         imageProd='montacargas.jpg'
         altImage='montacargas'
