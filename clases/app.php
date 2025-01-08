@@ -89,7 +89,7 @@ class App
 
       case 'Cliente':
         //ENVIOS
-        $objectPhpMailer->setFrom($post['email']);
+        $objectPhpMailer->setFrom($post['email'], $_ENV['VITE_NAME_APP']);
         $objectPhpMailer->addAddress($destinationEmail); //Add a recipient
         $objectPhpMailer->addReplyTo($post['email']);
 
@@ -137,7 +137,7 @@ class App
     $objectPhpMailer->SMTPAuth   = true;
     $objectPhpMailer->Username   = $_ENV['VITE_EMAIL_CLIENT'];
     $objectPhpMailer->Password   = $_ENV['VITE_PASSWORD'];
-    $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $objectPhpMailer->CharSet    = $_ENV['VITE_EMAIL_CHARSET'];
     $objectPhpMailer->Port       = $_ENV['VITE_EMAIL_PORT'];
 
