@@ -19,8 +19,7 @@ import '@/assets/css/app.css'
 function App() {
   return (
     <AppProvider>
-      {/* <Router> */}
-      <Router basename='/dev/'>
+      <Router>
         <Header />
         <main className='page'>
           <ScrollToTop />
