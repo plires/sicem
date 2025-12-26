@@ -6,14 +6,11 @@ import CustomizeSection from '@/pages/Landing/components/CustomizeSection'
 import CTASection from '@/pages/Landing/components/CTASection'
 import Footer from '@/pages/Landing/components/Footer'
 
-import { getProducts } from '@/utils/dataUtils.js'
-
 import { ToastContainer } from 'react-toastify'
 
 import './Landing.css'
 
 const Landing = () => {
-  const products = getProducts('products')
   return (
     <>
       <ToastContainer />
@@ -26,7 +23,7 @@ const Landing = () => {
           subtitle='a medida para cada proyecto'
           description='Diseñamos soluciones integrales en ascensores electromecánicos e hidráulicos.'
         />
-        <ProductCarousel products={products} />
+        <ProductCarousel />
         <AboutSection
           title='Diseñamos ascensores, construimos confianza'
           subtitle='En Sicem SRL somos líderes en soluciones de equipos de elevación, especializados en el diseño y fabricación de ascensores innovadores.'
