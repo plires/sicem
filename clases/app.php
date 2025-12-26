@@ -62,7 +62,7 @@ class App
     }
 
     if ($this->emptyField($require->comments)) {
-      array_push($errors, 'Ingresá tu.');
+      array_push($errors, 'Ingresá tu consulta.');
     }
 
     return $errors;
@@ -117,7 +117,7 @@ class App
 
       case 'Contacto Cliente':
         $email['template'] = $this->selectEmailTemplate($post, 'to_client', $destinationEmail);
-        $email['subject'] = 'Nuevo Consulta desde Formulario web - ' . $_ENV['VITE_NAME_APP'];
+        $email['subject'] = 'Nuevo Consulta desde ' . $post['origin'] . ' - ' . $_ENV['VITE_NAME_APP'];
         break;
 
       case 'Contacto Usuario':

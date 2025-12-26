@@ -336,7 +336,7 @@
         <td style="padding: 40px; padding-top: 0px;">
 
           <h2 class="fallback-font" style="margin: 0 0 20px 0; padding-top: 40px; font-family: 'Montserrat', sans-serif; font-size: 22px; line-height: 32px; color: #0077b6; text-align: center; font-weight: 700; text-transform: uppercase;">
-            <strong>NUEVO CONTACTO DESDE FORMULARIO WEB</strong>
+            <strong>Contacto desde {origin}</strong>
           </h2>
 
           <br>
@@ -358,7 +358,7 @@
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            <strong>Origen:</strong> {utm_source}
+            <strong>Origen:</strong> {origin}
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">

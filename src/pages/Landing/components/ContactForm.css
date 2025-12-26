@@ -1,0 +1,114 @@
+/* ContactForm.css */
+.contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.contact-form__header {
+  background: #1a3a6b; /* Ajusta al color azul de tu marca */
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.contact-form__title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.contact-form__body {
+  padding: 30px;
+}
+
+.contact-form__input {
+  border: none;
+  border-bottom: 2px solid #333333;
+  border-radius: 0;
+  padding: 12px 0;
+  font-size: 1rem;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form__input:focus {
+  background: transparent;
+  border-bottom-color: #1a3a6b;
+  box-shadow: none;
+  outline: none;
+}
+
+.contact-form__input::placeholder {
+  color: #666666;
+  opacity: 1;
+}
+
+.contact-form__textarea {
+  resize: none;
+}
+
+.contact-form__check {
+  text-align: center;
+}
+
+.contact-form__check .form-check-input {
+  margin-top: 0.15em;
+  cursor: pointer;
+}
+
+.contact-form__check .form-check-label {
+  color: #333333;
+  font-size: 0.95rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contact-form__submit {
+  width: 100%;
+  background: #1a3a6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.contact-form__submit:hover {
+  background: #0f2544;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26, 58, 107, 0.4);
+}
+
+.contact-form__submit:active {
+  transform: translateY(0);
+}
+
+.contact-form__submit:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .contact-form__header {
+    padding: 18px 20px;
+  }
+
+  .contact-form__title {
+    font-size: 1.25rem;
+  }
+
+  .contact-form__body {
+    padding: 25px 20px;
+  }
+}

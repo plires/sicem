@@ -47,3 +47,33 @@ export const getLink = link => {
 export const getImageURL = name => {
   return new URL(`../assets/img/${name}`, import.meta.url).href
 }
+
+export const processValues = async (
+  values,
+  nameForm,
+  origin,
+  executeRecaptcha,
+  isSubscribed,
+) => {
+  const token = await executeRecaptcha(nameForm)
+  const processed = { ...values } // copiamos para no mutar directamente
+
+  processed.recaptchaToken = token
+
+  if (isSubscribed) {
+    processed.newsletter = 'on'
+  } else {
+    delete processed.newsletter
+  }
+
+  processed.origin = origin
+
+  const urlParams = new URLSearchParams(window.location.search)
+
+  processed.utm_source = urlParams.get('utm_source') || 'No Set'
+  processed.utm_medium = urlParams.get('utm_medium') || 'No Set'
+  processed.utm_campaign = urlParams.get('utm_campaign') || 'No Set'
+  processed.utm_content = urlParams.get('utm_content') || 'No Set'
+
+  return processed
+}
