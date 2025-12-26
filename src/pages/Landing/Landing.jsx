@@ -10,8 +10,6 @@ import { getProducts } from '@/utils/dataUtils.js'
 
 import { ToastContainer } from 'react-toastify'
 
-import logoLarge from '@/assets/img/landing/logo-large.svg'
-import logoSmall from '@/assets/img/landing/logo-small.svg'
 import videoBackground from '@/assets/video/ascensor.mp4'
 
 import './Landing.css'
@@ -21,11 +19,7 @@ const Landing = () => {
   return (
     <>
       <ToastContainer />
-      <Header
-        logoLarge={logoLarge}
-        logoSmall={logoSmall}
-        scrollThreshold={100}
-      />
+      <Header scrollThreshold={100} />
 
       {/* Resto del contenido */}
       <main style={{ marginTop: '120px' }}>

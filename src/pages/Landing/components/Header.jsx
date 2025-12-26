@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
+
+import logoLarge from '@/assets/img/landing/logo-large.svg'
+import logoSmall from '@/assets/img/landing/logo-small.svg'
+
 import './Header.css'
 
-const Header = ({ logoLarge, logoSmall, scrollThreshold = 100 }) => {
+const Header = ({ scrollThreshold = 100 }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
