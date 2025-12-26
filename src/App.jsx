@@ -10,7 +10,7 @@ import Empresa from '@/pages/Empresa'
 import Productos from '@/pages/Productos'
 import Accesorios from '@/pages/Accesorios'
 import Contacto from '@/pages/Contacto'
-import Landing from '@/pages/Landing'
+import Landing from '@/pages/Landing/Landing'
 import NotFound from '@/pages/NotFound'
 
 import '@/assets/css/app.css'
