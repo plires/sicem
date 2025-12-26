@@ -21,13 +21,16 @@ const ContactForm = () => {
       .email('Email inválido')
       .required('El email es requerido'),
     phone: Yup.string()
-      .matches(/^[0-9\s\-\+\(\)]+$/, 'Teléfono inválido')
       .min(8, 'El teléfono debe tener al menos 8 dígitos')
       .required('El teléfono es requerido'),
     comments: Yup.string()
       .min(10, 'La comentarios debe tener al menos 10 caracteres')
-      .required('La comentarios es requerida'),
+      .required('Los comentarios son requeridos'),
   })
+
+  const handleChange = event => {
+    setIsSubscribed(event.target.checked)
+  }
 
   const formik = useFormik({
     initialValues: {
@@ -158,7 +161,7 @@ const ContactForm = () => {
               }`}
               id='comments'
               name='comments'
-              placeholder='comentarios'
+              placeholder='consulta'
               rows='4'
               value={formik.values.comments}
               onChange={formik.handleChange}
@@ -175,9 +178,10 @@ const ContactForm = () => {
               <input
                 className='form-check-input'
                 type='checkbox'
-                id='newsletter'
+                onChange={handleChange}
                 checked={isSubscribed}
-                onChange={e => setIsSubscribed(e.target.checked)}
+                name='newsletter'
+                id='newsletter'
               />
               <label className='form-check-label' htmlFor='newsletter'>
                 Suscribirse al Newsletter
@@ -188,7 +192,7 @@ const ContactForm = () => {
           {/* Botón de envío */}
           <button
             type='submit'
-            className='btn contact-form__submit'
+            className='btn contact-form__submit transition'
             disabled={formik.isSubmitting}
           >
             {formik.isSubmitting ? 'ENVIANDO...' : 'ENVIAR'}
