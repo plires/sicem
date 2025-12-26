@@ -1,5 +1,4 @@
 // ProductCard.jsx
-import { useState } from 'react'
 import { getImageURL } from '@/utils/dataUtils.js'
 import './ProductCard.css'
 
