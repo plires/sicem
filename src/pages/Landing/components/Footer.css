@@ -1,0 +1,161 @@
+/* Footer.css */
+.footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 60px 0 0 0;
+  width: 100%;
+}
+
+/* Logo */
+.footer__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1); /* Convierte el logo a blanco si es necesario */
+}
+
+/* Información de Contacto */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: #ffffff;
+}
+
+.footer__icon {
+  font-size: 1.3rem;
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  display: block;
+}
+
+.footer__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Copyright */
+.footer__bottom {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 991px) {
+  .footer {
+    padding: 50px 0 0 0;
+  }
+
+  .footer__logo-container {
+    margin-bottom: 30px;
+  }
+
+  .footer__logo {
+    max-width: 240px;
+  }
+
+  .footer__contact {
+    gap: 18px;
+  }
+
+  .footer__bottom {
+    margin-top: 40px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 0 0 0;
+  }
+
+  .footer__logo {
+    max-width: 200px;
+  }
+
+  .footer__contact {
+    gap: 16px;
+  }
+
+  .footer__contact-item {
+    gap: 12px;
+  }
+
+  .footer__icon {
+    font-size: 1.2rem;
+  }
+
+  .footer__link,
+  .footer__text {
+    font-size: 1rem;
+  }
+
+  .footer__bottom {
+    margin-top: 35px;
+    padding: 18px 0;
+  }
+
+  .footer__copyright {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 35px 0 0 0;
+  }
+
+  .footer__logo {
+    max-width: 180px;
+  }
+
+  .footer__contact {
+    gap: 14px;
+  }
+
+  .footer__link,
+  .footer__text {
+    font-size: 0.95rem;
+  }
+}

@@ -4,6 +4,7 @@ import ProductCarousel from '@/pages/Landing/components/ProductCarousel'
 import AboutSection from '@/pages/Landing/components/AboutSection'
 import CustomizeSection from '@/pages/Landing/components/CustomizeSection'
 import CTASection from '@/pages/Landing/components/CTASection'
+import Footer from '@/pages/Landing/components/Footer'
 
 import { getProducts } from '@/utils/dataUtils.js'
 
@@ -47,6 +48,16 @@ const Landing = () => {
           description='Confianza, experiencia y soluciones eficientes en ascensores y sistemas de elevación. Hablá con nuestro equipo y encontrá la mejor opción para tu proyecto.'
           buttonText='CONTACTANOS'
           targetId='contact-form'
+        />
+
+        <Footer
+          phone='011 4709 1961'
+          email='sicemsrl@sicemsrl.com.ar'
+          address='Perú 436, Villa Martelli, Buenos Aires.'
+          schedule={{
+            days: 'Lunes a viernes',
+            hours: '8 am a 12:30 am | 13:00 pm a 16:00 pm',
+          }}
         />
       </main>
     </>
