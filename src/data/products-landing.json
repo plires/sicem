@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "CABINA CAMERINO",
-      "image": "empresa.webp",
+      "image": "cabina-camerino.webp",
       "features": [
         "Cabina de acero inoxidable espejado",
         "Espejo en las 3 caras",
@@ -15,7 +15,7 @@
     {
       "id": 2,
       "title": "MONTAVEHÍCULOS",
-      "image": "empresa.webp",
+      "image": "montavehiculos.webp",
       "features": [
         "Realizado en chapa",
         "Con controles y elementos de seguridad",
@@ -26,7 +26,7 @@
     {
       "id": 3,
       "title": "CABINA PANORÁMICA",
-      "image": "empresa.webp",
+      "image": "cabina-panoramica.webp",
       "features": [
         "Cabina 100% vidriada",
         "Con estructura, zócalos, pasamanos y marco de techo suspendido de acero",
@@ -37,7 +37,7 @@
     {
       "id": 4,
       "title": "CABINA MONTECARLO",
-      "image": "empresa.webp",
+      "image": "cabina-montecarlo.webp",
       "features": [
         "Cabina realizada con espejo clásico",
         "Con zócalos, pasamanos y marco de techo suspendido de acero.",
@@ -48,7 +48,7 @@
     {
       "id": 4,
       "title": "montacargas",
-      "image": "empresa.webp",
+      "image": "montacargas.webp",
       "features": [
         "Se realiza según las necesidades de transporte del cliente.",
         "Esta diseñado solamente para carga",

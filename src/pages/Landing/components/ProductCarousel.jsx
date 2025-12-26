@@ -65,6 +65,12 @@ const ProductCarousel = () => {
   return (
     <section className='product-carousel'>
       <div className='container'>
+        <div className='row'>
+          <div className='col-md-12 text-center'>
+            <h2 className='title'>La solución ideal</h2>
+            <p>Conocé nuestros modelos de ascensores y sistemas de carga</p>
+          </div>
+        </div>
         <Slider ref={sliderRef} {...settings}>
           {products.map((product, index) => (
             <div key={index} className='product-carousel__slide'>
