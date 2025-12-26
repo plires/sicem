@@ -1,0 +1,105 @@
+/* Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 120px;
+}
+
+.header:after {
+  background-color: #ffffff;
+}
+
+.header--scrolled {
+  background-color: #ffffff;
+  height: 70px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header--scrolled:after {
+  background-color: var(--primary-color);
+}
+
+.header__container {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: justify-content 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+}
+
+.header--scrolled .header__container {
+  justify-content: flex-start;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Altura fija para el logo grande */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__logo--small {
+  height: 50px; /* Altura reducida para el logo pequeño */
+}
+
+.header__logo img,
+.header__logo-img {
+  display: block;
+  height: 100%; /* Usa el 100% de la altura del contenedor */
+  width: auto; /* Mantiene la proporción */
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    height: 90px;
+  }
+
+  .header--scrolled {
+    height: 60px;
+  }
+
+  .header__logo {
+    height: 60px;
+  }
+
+  .header__logo--small {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 70px;
+  }
+
+  .header--scrolled {
+    height: 55px;
+  }
+
+  .header__logo {
+    height: 50px;
+  }
+
+  .header__logo--small {
+    height: 35px;
+  }
+
+  .header__container {
+    padding: 0 15px;
+  }
+}
