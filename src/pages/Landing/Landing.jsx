@@ -10,8 +10,6 @@ import { getProducts } from '@/utils/dataUtils.js'
 
 import { ToastContainer } from 'react-toastify'
 
-import videoBackground from '@/assets/video/ascensor.mp4'
-
 import './Landing.css'
 
 const Landing = () => {
@@ -24,7 +22,6 @@ const Landing = () => {
       {/* Resto del contenido */}
       <main style={{ marginTop: '120px' }}>
         <Hero
-          videoSrc={videoBackground}
           title='Ascensores y Montacargas'
           subtitle='a medida para cada proyecto'
           description='Diseñamos soluciones integrales en ascensores electromecánicos e hidráulicos.'

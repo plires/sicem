@@ -1,9 +1,12 @@
 // Hero.jsx
 import { useRef, useEffect } from 'react'
-import './Hero.css'
 import ContactForm from './ContactForm'
 
-const Hero = ({ videoSrc, title, subtitle, description }) => {
+import videoBackground from '@/assets/video/ascensor.mp4'
+
+import './Hero.css'
+
+const Hero = ({ title, subtitle, description }) => {
   const videoRef = useRef(null)
 
   useEffect(() => {
@@ -27,7 +30,7 @@ const Hero = ({ videoSrc, title, subtitle, description }) => {
           muted
           playsInline
         >
-          <source src={videoSrc} type='video/mp4' />
+          <source src={videoBackground} type='video/mp4' />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>
