@@ -3,6 +3,7 @@ import Hero from '@/pages/Landing/components/Hero'
 import ProductCarousel from '@/pages/Landing/components/ProductCarousel'
 import AboutSection from '@/pages/Landing/components/AboutSection'
 import CustomizeSection from '@/pages/Landing/components/CustomizeSection'
+import CTASection from '@/pages/Landing/components/CTASection'
 
 import { getProducts } from '@/utils/dataUtils.js'
 
@@ -41,6 +42,12 @@ const Landing = () => {
           bgColor='var(--primary-color)'
         />
         <CustomizeSection />
+        <CTASection
+          title='Más de 70 años de experiencia en soluciones verticales'
+          description='Confianza, experiencia y soluciones eficientes en ascensores y sistemas de elevación. Hablá con nuestro equipo y encontrá la mejor opción para tu proyecto.'
+          buttonText='CONTACTANOS'
+          targetId='contact-form'
+        />
       </main>
     </>
   )
