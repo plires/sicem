@@ -1,5 +1,10 @@
 import Header from './components/Header'
-import Hero from './components/Hero'
+import Hero from '@/pages/Landing/components/Hero'
+import ProductCarousel from '@/pages/Landing/components/ProductCarousel'
+import AboutSection from '@/pages/Landing/components/AboutSection'
+
+import { getProducts } from '@/utils/dataUtils.js'
+
 import { ToastContainer } from 'react-toastify'
 
 import logoLarge from '@/assets/img/landing/logo-large.svg'
@@ -9,6 +14,7 @@ import videoBackground from '@/assets/video/ascensor.mp4'
 import './Landing.css'
 
 const Landing = () => {
+  const products = getProducts('products')
   return (
     <>
       <ToastContainer />
@@ -18,15 +24,21 @@ const Landing = () => {
         scrollThreshold={100}
       />
 
-      <Hero
-        videoSrc={videoBackground}
-        title='Ascensores y Montacargas'
-        subtitle='a medida para cada proyecto'
-        description='Diseñamos soluciones integrales en ascensores electromecánicos e hidráulicos.'
-      />
-
       {/* Resto del contenido */}
       <main style={{ marginTop: '120px' }}>
+        <Hero
+          videoSrc={videoBackground}
+          title='Ascensores y Montacargas'
+          subtitle='a medida para cada proyecto'
+          description='Diseñamos soluciones integrales en ascensores electromecánicos e hidráulicos.'
+        />
+        <ProductCarousel products={products} />
+        <AboutSection
+          title='Diseñamos ascensores, construimos confianza'
+          subtitle='En Sicem SRL somos líderes en soluciones de equipos de elevación, especializados en el diseño y fabricación de ascensores innovadores.'
+          description='Hace 75 años hemos estado comprometidos con la innovación, ofreciendo ascensores, cabinas personalizadas y accesorios de alta calidad que transforman la movilidad en edificios residenciales, comerciales e industriales.'
+          bgColor='var(--primary-color)'
+        />
         <h2 className='title'>sadsadsad</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
         perferendis reiciendis iure ipsum aut numquam aperiam cum quos alias

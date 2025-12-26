@@ -2,11 +2,13 @@ import accesorios from '@/data/accesorios.json'
 import accesoriosSection from '@/data/accesorios-section.json'
 import images from '@/data/carrusel-empresa.json'
 import cabinas from '@/data/carrusel-home-cabinas.json'
+import products from '@/data/products-landing.json'
 
 export const getAccesorios = key => accesorios[key]
 export const getAccesoriosSection = key => accesoriosSection[key]
 export const getImgCarruselEmpresa = key => images[key]
 export const getCabinas = key => cabinas[key]
+export const getProducts = key => products[key]
 
 export const validation = values => {
   const errors = {}

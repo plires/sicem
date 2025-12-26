@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "CABINA CAMERINO",
+      "image": "empresa.webp",
+      "features": [
+        "Cabina de acero inoxidable espejado",
+        "Espejo en las 3 caras",
+        "Botonera de paño entero con indicador de piso",
+        "Zócalos, pasamanos y techo suspendido",
+        "Buena iluminación y piso de mármol"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "MONTAVEHÍCULOS",
+      "image": "empresa.webp",
+      "features": [
+        "Realizado en chapa",
+        "Con controles y elementos de seguridad",
+        "Optimización de espacio y el accionar del estacionamiento",
+        "Versión Electromecánica o Hidráulica"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "CABINA PANORÁMICA",
+      "image": "empresa.webp",
+      "features": [
+        "Cabina 100% vidriada",
+        "Con estructura, zócalos, pasamanos y marco de techo suspendido de acero",
+        "Botonera de paño entero de acero inoxidables con indicador de color",
+        "Techo de acero inoxidable perforado y piso de mármol"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "CABINA MONTECARLO",
+      "image": "empresa.webp",
+      "features": [
+        "Cabina realizada con espejo clásico",
+        "Con zócalos, pasamanos y marco de techo suspendido de acero.",
+        "Botonera de paño entero de acero inoxidables con indicador de color",
+        "Piso de mármol y buenas terminaciones"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "montacargas",
+      "image": "empresa.webp",
+      "features": [
+        "Se realiza según las necesidades de transporte del cliente.",
+        "Esta diseñado solamente para carga",
+        "Utiliza botoneras de llamada y envío"
+      ]
+    }
+  ]
+}
