@@ -33,7 +33,7 @@ const ProductCarousel = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -64,6 +64,8 @@ const ProductCarousel = () => {
 
   return (
     <section className='product-carousel'>
+      <div className='landingGralIzq'></div>
+      <div className='landingGralDer'></div>
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 text-center'>

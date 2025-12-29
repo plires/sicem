@@ -72,15 +72,15 @@ const Footer = ({ phone, email, address, schedule }) => {
         </div>
       </div>
 
-      {/* Copyright (opcional) */}
+      {/* Copyright */}
       <div className='footer__bottom'>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-lg-10 offset-lg-1'>
-              <p className='footer__copyright'>
+              <span className='footer__copyright text-center w-100 d-block'>
                 © {new Date().getFullYear()} Sicem SRL. Todos los derechos
                 reservados.
-              </p>
+              </span>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Landing = () => {
       <Header scrollThreshold={100} />
 
       {/* Resto del contenido */}
-      <main style={{ marginTop: '120px' }}>
+      <main className='landing' style={{ marginTop: '70px' }}>
         <Hero
           title='Ascensores y Montacargas'
           subtitle='a medida para cada proyecto'

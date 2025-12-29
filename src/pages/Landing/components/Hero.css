@@ -10,6 +10,14 @@
   padding-bottom: 60px;
 }
 
+.hero h2 {
+  color: white !important;
+}
+
+.hero p {
+  color: white !important;
+}
+
 /* Video de fondo */
 .hero__video-container {
   position: absolute;
