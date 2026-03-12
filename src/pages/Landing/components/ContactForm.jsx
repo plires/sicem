@@ -64,6 +64,10 @@ const ContactForm = () => {
           window.dataLayer.push({
             formLocation: 'form_landing',
             event: 'send_form_landing',
+            user_data: {
+              email: values.email,
+              phone_number: values.phone,
+            },
           })
         } else {
           responseData.errors.map(error => {
