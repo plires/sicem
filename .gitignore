@@ -25,6 +25,7 @@ dist-ssr
 *.sw?
 
 # custom
+.atl/
 *.sql
 img-email
 public/favicons

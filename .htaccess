@@ -1,9 +1,17 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
-</IfModule>
+RewriteEngine On
+
+# Redirigir siempre a https://sicemsrl.com.ar
+RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge/
+RewriteCond %{HTTP_HOST} ^www\.sicemsrl\.com\.ar$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?sicemsrl\.com\.ar$ [NC]
+RewriteRule ^(.*)$ https://sicemsrl.com.ar%{REQUEST_URI} [R=301,L]
+
+# SPA / frontend routing
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]

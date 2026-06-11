@@ -159,14 +159,17 @@ class App
     // Setear Template y asunto de los mails
     $email_content = $this->setTemplateAndEmailSubject($template, $post, $destinationEmail);
 
-    if ($_ENV['VITE_ENVIRONMENT'] === 'local') {
-      $mail->isSendmail();
-    } else {
-      $mail->isSMTP();
-    }
+    $mail->isSMTP();
 
-    //SERVER SETTINGS
-    $mail = $this->setServerValuesToSendEmails($objectPhpMailer);
+    if ($_ENV['VITE_ENVIRONMENT'] === 'local') {
+      $mail->Host      = 'mailpit';
+      $mail->Port      = 1025;
+      $mail->SMTPAuth  = false;
+      $mail->CharSet   = 'UTF-8';
+    } else {
+      //SERVER SETTINGS
+      $mail = $this->setServerValuesToSendEmails($objectPhpMailer);
+    }
 
     //CONTENIDO
     $mail->isHTML(true);
@@ -189,7 +192,7 @@ class App
     (isset($post['utm_source'])) ? $utm_source = $post['utm_source'] : $utm_source = 'no set';
 
     if (!defined('BASE')) {
-      define('BASE', $_ENV['VITE_ROOT']);
+      define('BASE', $_ENV['VITE_EMAIL_BASE'] ?? $_ENV['VITE_ROOT']);
     }
 
     //configuro las variables a remplazar en el template
@@ -228,18 +231,22 @@ class App
       $arrContextOptions = array();
     }
 
+    $templateBase = ($_ENV['VITE_ENVIRONMENT'] === 'local')
+      ? __DIR__ . '/../'
+      : $_ENV['VITE_ROOT'];
+
     switch ($to) {
 
       case 'to_client':
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
+        $template = file_get_contents($templateBase . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
         break;
 
       case 'to_user':
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-user.php', false, stream_context_create($arrContextOptions));
+        $template = file_get_contents($templateBase . 'includes/emails/contacts/contacts-to-user.php', false, stream_context_create($arrContextOptions));
         break;
 
       default:
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
+        $template = file_get_contents($templateBase . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
         break;
     }
 

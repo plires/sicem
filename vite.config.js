@@ -19,4 +19,11 @@ export default defineConfig({
     },
   },
   base: '/',
+  server: {
+    host: true,
+    port: 5173,
+    proxy: {
+      '/php': 'http://php:80',
+    },
+  },
 })

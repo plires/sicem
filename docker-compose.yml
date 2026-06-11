@@ -1,0 +1,46 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    ports:
+      - '8080:80'
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - db
+      - mailpit
+
+  node:
+    image: node:20-alpine
+    working_dir: /app
+    ports:
+      - '5173:5173'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run dev"
+    depends_on:
+      - php
+
+  db:
+    image: mysql:8.0
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sicem
+      MYSQL_USER: sicem
+      MYSQL_PASSWORD: sicem
+    volumes:
+      - db_data:/var/lib/mysql
+
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - '8025:8025'
+      - '1025:1025'
+
+volumes:
+  db_data:
