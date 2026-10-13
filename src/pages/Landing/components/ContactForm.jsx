@@ -69,6 +69,16 @@ const ContactForm = () => {
               phone_number: values.phone,
             },
           })
+
+          window.portal
+          ?.lead({
+            name: values.name,
+            email: values.email,
+            phone: String(values.phone),
+            message: values.comments,
+          })
+          .catch(() => {});
+          
         } else {
           responseData.errors.map(error => {
             return toast.error(error)
